@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	background: #111;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #6441A5, #111);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #6441A5, #111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-attachment: fixed;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 24px;
+	color: #222;
+}
+
+/* ############ HEADER! ############ */
+
+ul {
+	list-style: none;
+}
+
+.logobar {
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+
+.logobar img {
+	height: 75px;
+}
+
+.nav ul{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.nav ul li {
+	padding-left: 5px;
+	margin-right: 15px;
+	border-spacing: 5px;
+	border-left: 3px solid #222;
+	border-bottom: 2px solid #222;
+	font-size: 90%;
+}
+
+.nav ul li:hover,
+.nav ul li:active{
+	border-color: #6742AA
+}
+
+.nav ul li:last-of-type {
+	margin-right: 0;
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+input {
+	border-radius: 20px;
+	border: none;
+	height: 25px;
+	width: 350px;
+	outline: none;
+	margin-bottom: 4px;
+}
+
+button {
+	background: none;
+	border: none;
+	font-size: 26px;
+}
+
+/* ############ Results ############ */
+.result-box {
+	/* background: rgba(255, 255, 255, 0.1); */
+	color: #EEEEEE;
+	border-left: 4px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.avatar {
+	border-radius: 50%;
+	height: 75px;
+}
+
+.status-box {
+	/* display: flex; */
+	flex-direction: column;
+}
+
+.preview {
+	height: 85px;
+}
