@@ -104,7 +104,6 @@ button {
 
 /* ############ Results ############ */
 .result-box {
-	/* background: rgba(255, 255, 255, 0.1); */
 	color: #EEEEEE;
 	border-left: 7px solid #794EC5;
 	border-bottom: 4px solid #794EC5;
@@ -159,10 +158,6 @@ button {
 
 .preview {
 	height: 85px;
-	/* border-left: 12px solid #794EC5;
-	border-bottom: 8px solid #794EC5; */
-	/* border-top: 2px solid #794EC5;
-	border-right: 2px solid #794EC5; */
 }
 
 .creds {
@@ -172,8 +167,3 @@ button {
 	text-align: center;
 }
 
-
-
-@media only screen and (max-width: 500px){
-
-}
