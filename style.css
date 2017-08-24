@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	background: #111;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #6441A5, #111);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #6441A5, #111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to bottom, #6E49B3, #111);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #6E49B3, #111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-attachment: fixed;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 24px;
@@ -11,8 +11,26 @@ body {
 
 /* ############ HEADER! ############ */
 
+a:link {
+	text-decoration: none;
+}
+
 ul {
 	list-style: none;
+}
+
+h2{
+	font-size: 90%;
+}
+
+h3 {margin-bottom: 15px;}
+
+p {
+	font-size: 75%;
+	font-weight: 300;
+	margin-top: 15px;
+	margin-bottom: 8px;
+	color: #CCCCCC
 }
 
 .logobar {
@@ -35,14 +53,28 @@ ul {
 	padding-left: 5px;
 	margin-right: 15px;
 	border-spacing: 5px;
-	border-left: 3px solid #222;
-	border-bottom: 2px solid #222;
+	border-left: 7px solid #222;
+	border-bottom: 4px solid #222;
 	font-size: 90%;
+	-webkit-transition: border-color 500ms ;
+	-moz-transition: border-color 500ms ;
+	transition: border-color 500ms ;
+	-webkit-transition: color 500ms ;
+	-moz-transition: color 500ms ;
+	transition: color 500ms ;
 }
 
 .nav ul li:hover,
 .nav ul li:active{
-	border-color: #6742AA
+	border-color: #794EC5;
+	color: #E9E9E9;
+	cursor: pointer;
+	-webkit-transition: border 500ms;
+	-moz-transition: border 500ms;
+	transition: border 500ms;
+	-webkit-transition: color 500ms ;
+	-moz-transition: color 500ms ;
+	transition: color 500ms ;
 }
 
 .nav ul li:last-of-type {
@@ -74,24 +106,74 @@ button {
 .result-box {
 	/* background: rgba(255, 255, 255, 0.1); */
 	color: #EEEEEE;
-	border-left: 4px solid #eeeeee;
-	border-bottom: 2px solid #eeeeee;
+	border-left: 7px solid #794EC5;
+	border-bottom: 4px solid #794EC5;
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 45px;
+	-webkit-transition: border-color 500ms ;
+	-moz-transition: border-color 500ms ;
+	transition: border-color 500ms ;
+}
+
+.result-box:last-of-type {
+	margin-bottom: 40px;
+}
+
+.result-box:hover {
+	border-left: 7px solid #fff;
+	border-bottom: 4px solid #fff;
+	-webkit-transition: border-color 500ms ;
+	-moz-transition: border-color 500ms ;
+	transition: border-color 500ms ;
+}
+
+.result-box:active {
+	border-left: 7px solid #BF1CEB;
+	border-bottom: 4px solid #BF1CEB;
 }
 
 .avatar {
 	border-radius: 50%;
 	height: 75px;
+	margin-top: 10px;
+}
+
+.avatar-nest {
+	margin-left: 15px;
+}
+
+.avatar-nest p:last-of-type {
+	font-size: 60%;
+	margin-top: 5px;
 }
 
 .status-box {
-	/* display: flex; */
-	flex-direction: column;
+	text-align: center;
+}
+
+.status-box i {
+	font-size: 150%;
 }
 
 .preview {
 	height: 85px;
+	/* border-left: 12px solid #794EC5;
+	border-bottom: 8px solid #794EC5; */
+	/* border-top: 2px solid #794EC5;
+	border-right: 2px solid #794EC5; */
+}
+
+.creds {
+	font-size: 50%;
+	color: #3B1D71;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+
+@media only screen and (max-width: 500px){
+
 }
